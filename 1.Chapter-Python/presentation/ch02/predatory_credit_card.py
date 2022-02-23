@@ -53,5 +53,5 @@ class PredatoryCreditCard(CreditCard):
     """Assess monthly interest on outstanding balance."""
     if self._balance > 0:
       # if positive balance, convert APR to monthly multiplicative factor
-      monthly_factor = pow(1 + self._apr, 1/12)
+      monthly_factor = pow(1 - self._apr, 1/12)
       self._balance *= monthly_factor
