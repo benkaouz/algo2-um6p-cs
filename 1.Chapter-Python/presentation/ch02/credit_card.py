@@ -73,6 +73,9 @@ class CreditCard:
     """Process customer payment that reduces balance."""
     self._balance -= amount
 
+
+print(__name__)
+
 if __name__ == '__main__':
   wallet = []
   wallet.append(CreditCard('John Bowman', 'California Savings',
